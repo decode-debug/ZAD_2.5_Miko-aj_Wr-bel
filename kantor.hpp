@@ -16,7 +16,7 @@ public:
     const float EUR_to_USD = 1.09;
     const float USD_to_EUR = 0.92;
 
-    static void convert_currency( Waluta & currency_1,  Waluta & currency_2) {
+    void convert_currency( Waluta currency_1,  Waluta currency_2) const {
         const std::string type_1 = currency_1.currency_type();
         const std::string type_2 = currency_2.currency_type();
         if (type_1 == "USD" && type_2 == "PLN") {
